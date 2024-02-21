@@ -13,14 +13,21 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-    
-    <Stack.Screen name="Home" component={HomeScreen} />
-    <Stack.Screen name="Quiz" component={QuizScreen} />
-    <Stack.Screen name="Results" component={QuizResults} />
-    
-  </Stack.Navigator>
-</NavigationContainer>
+      <Stack.Navigator screenOptions={{
+        headerStyle: {
+          backgroundColor: 'black',
+        },
+        headerTintColor: 'white',
+
+      }} >
+
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Quiz" component={QuizScreen} />
+        <Stack.Screen name="Results" component={QuizResults} />
+
+      </Stack.Navigator>
+      <StatusBar style="light" backgroundColor="black" />
+    </NavigationContainer>
   );
 }
 

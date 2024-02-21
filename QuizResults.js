@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity, Alert, Image } from 'react-native';
 import * as SQLite from 'expo-sqlite';
 import { useNavigation } from '@react-navigation/native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 const db = SQLite.openDatabase('QuizDB.db');
 
-export default function QuizResults() { // Lisää sulkevat sulkeet tähän
+export default function QuizResults() {
 
     const navigation = useNavigation();
 
@@ -23,26 +24,65 @@ export default function QuizResults() { // Lisää sulkevat sulkeet tähän
                 console.log('Select result:', rows._array);
                 const sortedScores = rows._array.sort((a, b) => b.score - a.score);
                 setHighScores(sortedScores);
-                console.log('sorted score',sortedScores);
+                console.log('sorted score', sortedScores);
             });
         });
-    } 
+    }
+
+    const deleteAllItems = () => {
+        Alert.alert(
+            '⚠️ Alert ⚠️',
+            'Are you sure you want to delete whole scoreboard?',
+            [
+                {
+                    text: 'NO',
+                    style: 'cancel',
+                },
+                {
+                    text: 'YES',
+                    onPress: () => {
+                        db.transaction(
+                            tx => {
+                                tx.executeSql(`delete from highScores;`, [], updateList);
+                            },
+                            null,
+                            updateList
+                        );
+                    },
+                },
+            ],
+            { cancelable: false }
+        );
+    };
+
 
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>High Scores</Text>
+            <LinearGradient
+
+                colors={['rgba(0,0,0,0.9)', 'transparent']}
+                style={styles.background}
+            />
+
+            <Image style={styles.image} source={require('./images/highscore.png')} />
+
+            <TouchableOpacity onPress={deleteAllItems} style={styles.deleteButton}>
+                <Text style={styles.deleteText}>Delete All</Text>
+            </TouchableOpacity>
             <FlatList
-                style={{ marginLeft: 0 }}
-                keyExtractor={item => item.id.toString()}
+                style={{ marginLeft: 0, backgroundColor: 'transparent' }}
+                keyExtractor={(item, index) => index.toString()}
                 data={highScores}
-                renderItem={({ item }) => (
+                renderItem={({ item, index }) => (
                     <View style={styles.scoreContainer}>
-                        <Text style={styles.header}>{item.name}, {item.score}</Text>
+                        <Text style={styles.leader}>{index + 1}.      {item.name}       {item.score}</Text>
                     </View>
+
                 )}
             />
         </View>
-    ); // Lisää tämä sulkeet tähän
+
+    );
 }
 
 const styles = StyleSheet.create({
@@ -50,22 +90,55 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#015442',
     },
     header: {
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 10,
+        color: 'white'
     },
     scoreContainer: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
-        width: '80%',
+        width: '100%',
         padding: 10,
         borderBottomWidth: 1,
         borderBottomColor: '#ccc',
-        
+
     },
+    leader: {
+        fontSize: 18,
+        fontWeight: '700',
+        marginBottom: 7,
+        color: 'white'
+    },
+    background: {
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        height: 450,
+    },
+    deleteButton: {
+        marginBottom: 20,
+        borderWidth: 1,
+        borderColor: '#CE032E',
+        backgroundColor: '#CE032E',
+        width: 150,
+        height: 40,
+        borderRadius: 5,
+    },
+    deleteText: {
+        color: 'white',
+        fontSize: 20,
+        marginLeft: 30,
+        marginTop: 5
+    },
+    image: {
+
+    }
 });
 
 

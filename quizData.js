@@ -2,8 +2,8 @@ export const quizData = [
 
 {
     question: 'Mistä maasta Heineken-olut tulee?',
-    options: ['Saksa', 'Tanska', 'Hollanti', 'Itävalta'],
-    answer: 'Hollanti',
+    options: ['Saksa', 'Tanska', 'Alankomaat', 'Itävalta'],
+    answer: 'Alankomaat',
 },
 {
     question: 'Mikä on Bulgarian pääkaupunki?',
@@ -99,5 +99,255 @@ export const quizData = [
     question: 'Kuka voitti parhaan miespääosan Oscarin vuonna 2023?',
     options: ['Rami Malek', 'Brendan Fraser', 'Will Smith', 'Tom Holland'],
     answer: 'Brendan Fraser',
+},
+{
+    question: 'Mikä maa EI ole Saksan naapurimaa?',
+    options: ['Belgia', 'Liechtenstein', 'Tsekki', 'Sveitsi'],
+    answer: 'Liechtenstein',
+},
+{
+    question: 'Missä osavaltiossa sijaitsee Niken pääkonttori?',
+    options: ['Oregon', 'Kalifornia', 'Florida', 'South-Carolina'],
+    answer: 'Oregon',
+},
+{
+    question: 'Mikä on Suomen vanhin panimo?',
+    options: ['Hartwall', 'Sinebrychoff', 'Olvi', 'Pyynikin panimo'],
+    answer: 'Sinebrychoff',
+},
+{
+    question: 'Kuka Tuntemattoman sotilaan hahmoista toteaa "Tuu sä hakeen leipäs päälle voita"?',
+    options: ['Rokka', 'Koskela', 'Hietanen', 'Vanhala'],
+    answer: 'Vanhala',
+},
+{
+    question: 'Koska Suomessa otettiin käyttöön tekst-tv?',
+    options: ['1975', '1981', '1988', '1993'],
+    answer: '1981',
+},
+{
+    question: 'Monta tähteä on Euroopan Unionin lipussa?',
+    options: ['10', '12', '15', '20'],
+    answer: '12',
+},
+{
+    question: 'Kuka EI kuulu Aleksis Kiven Seitsemään veljekseen?',
+    options: ['Tuomo', 'Eero', 'Timo', 'Aapo'],
+    answer: 'Tuomo',
+},
+{
+    question: 'Mikä on Tampereen vanhin kirkko?',
+    options: ['Tuomiokirkko', 'Aleksanterin kirkko', 'Messukylän vanha kirkko', 'Hervannan kirkko'],
+    answer: 'Messukylän vanha kirkko',
+},
+{
+    question: 'Kuinka syvä on Como-järven syvin kohta?',
+    options: ['349 metriä', '380 metriä', '413 metriä', '425 metriä'],
+    answer: '425 metriä',
+},
+{
+    question: 'Minkä maan pääkaupunki on Nairobi?',
+    options: ['Kolumbia', 'Kenia', 'Vietnam', 'Pakistan'],
+    answer: 'Kenia',
+},
+{
+    question: 'Monta tuotantokautta Salattuja Elämiä on tehty?',
+    options: ['18', '20', '23', '26'],
+    answer: '26',
+},
+{
+    question: 'Mikä on maailman vanhin kellomerkki?',
+    options: ['Hublot', 'TAG Heuer', 'Tissot', 'Blancpain',],
+    answer: 'Blancpain',
+},
+{
+    question: 'Kuka on maalannut Mona Lisan?',
+    options: ['Salvador Dali', 'Vincent Van Gogh', 'Leonardo da Vinci', 'Claude Monet'],
+    answer: 'Leonardo da Vinci',
+},
+{
+    question: 'Kuka feettaa Kaija Koon kappaleessa: Nää yöt ei anna armoo?',
+    options: ['Juha Tapio', 'Pete Parkkonen', 'Cheek', 'Redrama'],
+    answer: 'Cheek',
+},
+{
+    question: 'Missä maassa on eniten järviä?',
+    options: ['Venäjä', 'Suomi', 'Kanada', 'Ruotsi'],
+    answer: 'Kanada',
+},
+{
+    question: 'Mikä elokuva EI kuulu eniten Oscareita voittaneiden elokuvien joukkoon?',
+    options: ['Titanic (1997)', 'Ben-Hur (1959)', 'Schindlerin lista (1993)', 'Taru sormusten herrasta: Kuninkaan paluu (2003)'],
+    answer: 'Schindlerin lista (1993)',
+},
+{
+    question: 'Millä saarella Kööpenhamina sijaitsee?',
+    options: ['Gotlanti', 'Sjellanti', 'Bornholm', 'Öölanti'],
+    answer: 'Sjellanti',
+},
+{
+    question: 'Mikä on Lauri Tähkän oikea nimi?',
+    options: ['Jussi Salonen', 'Tuomo Metsä', 'Jarkko Suo', 'Joonas Alanen'],
+    answer: 'Jarkko Suo',
+},
+{
+    question: 'Kuinka korkea on Näsinneula, antenni mukaan lukien?',
+    options: ['122 metriä', '145 metriä', '168 metriä', '192 metriä'],
+    answer: '168 metriä',
+},
+{
+    question: 'Kuka maalivahti EI kuulunut MM-95 joukkueeseen?',
+    options: ['Ari Sulander', 'Jarmo Myllys', 'Markus Ketterer', 'Jukka Tammi'],
+    answer: 'Markus Ketterer',
+},
+{
+    question: 'Millä sanoilla alkaa Arttu Wiskarin Mökkitie?',
+    options: ['Faija tankkas, mutsi pakkasi eväitä', 'Kesäkuu vuonna 86', 'Mökkitie, kun edessä aukeaa', 'Pilvet liikkui, aurinko paistoi'],
+    answer: 'Kesäkuu vuonna 86',
+},
+{
+    question: 'Mistä maasta vaatemerkki Dickies on?',
+    options: ['Saksa', 'Yhdysvallat', 'Iso-Britannia', 'Australia'],
+    answer: 'Yhdysvallat',
+},
+{
+    question: 'Mikä on maailman puhutuin kieli?',
+    options: ['englanti', 'espanja', 'arabia', 'mandariinikiina'],
+    answer: 'mandariinikiina',
+},
+{
+    question: 'Montako desilitraa on 1 gallona?',
+    options: ['12 desilitraa', '20,8 deilitraa', '31,5 desiltraa', '37,9 desiltraa'],
+    answer: '37,9 desiltraa',
+},
+{
+    question: 'Mikä planeetta on lähimpänä aurinkoa?',
+    options: ['Uranus', 'Galctinus', 'Merkurius', 'Venus'],
+    answer: 'Merkurius',
+},
+{
+    question: 'Kuka murhasi kenraalikuvernööri Bobrikovin Helsingissä vuonna 1904?',
+    options: ['Eugen Schauman', 'Gavrilo Princip', 'Frans Ferdinand', 'Gustav Sthålberg'],
+    answer: 'Eugen Schauman',
+},
+{
+    question: 'Minä vuonna Tampereen Siilinkarin majakka on rakennettu?',
+    options: ['1906', '1921', '1937', '1952'],
+    answer: '1906',
+},
+{
+    question: 'Kuka EI näytellyt elokuvassa Pahat Pojat(2003)',
+    options: ['Eero Milonoff', 'Jasper Pääkkönen', 'Peter Frantzén', 'Niko Saarela'],
+    answer: 'Eero Milonoff',
+},
+{
+    question: 'Minkä suomalaisen yhtyeen laulaja on Johannes Brotherus?',
+    options: ['Portion boys', 'Kuumaa', 'Pariisin kevät', 'Valvomo'],
+    answer: 'Kuumaa',
+},
+{
+    question: 'Minä vuonna Seiska-lehti on perustettu?',
+    options: ['1978', '1986', '1992', '1996'],
+    answer: '1992',
+},
+{
+    question: 'Mikä suosittu lautapeli on nykymuodossaan julkaistu vuonna 1935?',
+    options: ['Afrikan tähti','Kimble','Risk', 'Monopoly'],
+    answer: 'Monopoly',
+},
+{
+    question: 'Mikä on maailman pisin joki?',
+    options: ['Volga', 'Yangtse', 'Niili', 'Tonava'],
+    answer: 'Niili',
+},
+{
+    question: 'Mikä on 2000-luvun myydyun kirjasarja? ',
+    options: ['Taru Sormusten herrasta', 'Harry Potter', 'Nälkäpeli', 'Ryhmä hau'],
+    answer: 'Harry Potter',
+},
+{
+    question: 'Kuka keksi ikonisen pikkumustan? ',
+    options: ['Louis Vuitton', 'Marie Curie', 'Coco Chanel', 'Prinsessa Diana'],
+    answer: 'Coco Chanel',
+},
+{
+    question: 'Kuinka monta kosketinta pianossa on? ',
+    options: ['35', '46', '67', '88'],
+    answer: '88',
+},
+{
+    question: 'Mikä kaupunki tunnettiin ennen nimellä Konstantinopoli?',
+    options: ['Kairo', 'Rooma', 'Istanbul', 'Tripol'],
+    answer: 'Istanbul',
+},
+{
+    question: 'Minkä Usa:n osavaltion ympäröivät Oregon, Nevada ja Arizona?',
+    options: ['Montana', 'Texas', 'Tennessee', 'Kalifornia'],
+    answer: '',
+},
+{
+    question: 'Minkä Usa:n osavaltion ympäröivät Arkansas, Tennessee, Alabama ja Louisiana?',
+    options: ['Georgia', 'Vermont', 'Nebraska', 'Mississippi'],
+    answer: 'Mississippi',
+},
+{
+    question: 'Mistä kaupungista The Beatles on lähtöisin?',
+    options: ['Lontoo', 'Edinburgh', 'Liverpool', 'Nevcastle'],
+    answer: 'Liverpool',
+},
+{
+    question: 'Minä vuonna Netflix perustettiin?',
+    options: ['1997', '2001', '2007','2011'],
+    answer: '1997',
+},
+{
+    question: 'Mikä on Australian pääkaupunki?',
+    options: ['Sydney', 'Canberra', 'Melbourne', 'Auckland'],
+    answer: 'Canberra',
+},
+{
+    question: 'Mikä maa voitti Eurovision laulukilpailun vuonna 2021?',
+    options: ['Ruotsi', 'Italia', 'Israel', 'Alankomaat'],
+    answer: 'Italia',
+},
+{
+    question: 'Kuka kirjailija on luonut Sherlock Holmesin?',
+    options: ['Helen Mirren', 'Arthur Conan Doyle', 'J.R Tolkien', 'Max Johnsson'],
+    answer: 'Arthur Conan Doyle',
+},
+{
+    question: 'Mikä eläin on samettijalka?',
+    options: ['Kissa', 'Marsu', 'Hirvi', 'Leopardi'],
+    answer: 'Hirvi',
+},
+{
+    question: 'Mikä on maailman vanhin pääkaupunki?',
+    options: ['Rooma', 'Tokio', 'Kairo', 'Damaskos'],
+    answer: 'Damaskos',
+},
+{
+    question: 'Mikä on Suomen kansallispuu?',
+    options: ['Mänty', 'Kuusi', 'Leppä', 'Koivu'],
+    answer: 'Koivu',
+},
+{
+    question: 'Mikä on maailman vanhin yliopisto?',
+    options: ['Oxfordin yliopisto', 'Harvardin yliopisto', 'Al-Qarawiyyin yliopisto', 'Rooman Sapienza yliopisto'],
+    answer: 'Al-Qarawiyyin yliopisto',
+},
+{
+    question: 'Mikä on Suomen kansallislintu?',
+    options: ['Merikotka', 'Laulujoutsen', 'Sinitiainen', 'Metsähanhi'],
+    answer: 'Laulujoutsen',
+},
+{
+    question: 'Mikä on Afrikan suurin maa pinta-alaltaan?',
+    options: ['Egypti', 'Algeria', 'Etelä-Afrikka', 'Nigeria'],
+    answer: 'Algeria',
+},
+{
+    question: 'Mikä on hiihtäjä Sami Jauhojärven lempinimi? ',
+    options: ['Rekku', 'Musti', 'Happo', 'Jauhis'],
+    answer: 'Musti',
 },
 ]
